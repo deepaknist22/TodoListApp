@@ -13,7 +13,7 @@ const TodoList = () => {
     }
     function removeActivity(i) {
         const updatedListData = listData.filter((ele, id) => {
-            return i!== id;
+            return i !== id;
         })
         setListData(updatedListData);
     }
@@ -34,6 +34,7 @@ const TodoList = () => {
                         </>
                     )
                 })}
+                {listData.length>=1 && <button>Remove ALL</button>}
             </div>
 
 
